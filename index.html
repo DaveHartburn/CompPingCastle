@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<title>Compare PingCastle reports</title>
+<script src="comppingcastle.js"></script>
+<link rel="stylesheet" href="CompPingCastle.css">
+</head>
+
+<body>
+<div id="mainContent">
+	<p>Comparison of two PingCastle reports. Copies of reports are not retained by this server. All analysis is performed in volatile memory.</p>
+
+	<div id="sectionContainer">
+		<div id="sectionA" class="fileSection">
+			<h2>File A</h2>
+			<div id="dzA" class="drop_zone" ondrop="dropHandler(event, 'A');" 
+			  ondragover="dragOver(event, 'A')";>
+			  <p>Drag PingCastle file here for analysis.</p>
+			</div>
+
+			<div id="outputA" class="outputarea"></div>
+		</div>
+		<div id="sectionB" class="fileSection" style="float: right;">
+			<h2>File B</h2>
+			<div id="dzB" class="drop_zone" ondrop="dropHandler(event, 'B');" 
+			  ondragover="dragOver(event, 'B')";>
+			  <p>Drag PingCastle file here for analysis.</p>
+			</div>
+
+			<div id="outputB" class="outputarea"></div>
+		</div>	
+	</div>
+
+	<div id="compContainer">
+		<div id="buttonContainer"><button id="compButton" disabled onClick="compareReports()">Compare reports</button></div>
+		<div id="compOutput">
+
+		</div>
+		
+	</div>
+</div>
+
+</body>
+
+</html>
