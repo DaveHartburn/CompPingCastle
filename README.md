@@ -6,3 +6,5 @@ Drag and drop the XML output from PingCastle. This small web utility will show y
 Written in HTML and JavaScript, reports are not uploaded or stored on a server.
 
 Runs fine from a local directory.
+
+This project should be considered beta. Any suggestions or contributions welcome.
